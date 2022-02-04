@@ -4,10 +4,86 @@
     padding: 0px;
 }
 
+
+
+/* Paleta de colores */
+
 $color1: crimson;
 $color2: gray;
 $color3: black;
 $color4: seashell;
+
+
+/* extend */
+
+%btn {
+    width: 100px;
+    text-align: center;
+    padding: 5px 0;
+    margin: 2px auto;
+    border-radius: 2px;
+    color: #FFFFFF;
+    margin-left: 550px;
+    margin-right: 550px;
+}
+  
+.btn_bariloche {
+    @extend %btn;
+    background-color: #108EFF;
+}
+.btn_cordoba {
+    @extend %btn;
+    background-color: #FF8516;
+}
+
+.btn_mendoza {
+    @extend %btn;
+    background-color: #29a33d;
+}
+
+/* mixins */
+
+@mixin container($ancho, $alto, $color) {
+  width: $ancho;
+  height: $alto;
+  background-color: $color;
+  border-radius: 5%;
+  text-align: center;
+  margin-left: 500px;
+  margin-right: 500px;
+} 
+
+.vermas{
+    margin-bottom: 40px;
+}
+
+.ver_mas{
+  @include container(200px, 40px, crimson)
+}
+
+.ver_mas2{
+    @include container(200px, 40px, crimson)
+  }
+
+
+
+
+/* map */ 
+
+
+$font-weights: ("regular": 400, "medium": 500, "bold": 700);
+
+@debug map-get($font-weights, "medium"); // 500
+@debug map-get($font-weights, "extra-bold"); // null
+
+p{
+    font-weight: 400;
+}
+
+
+
+
+
 
 .container{
     display: flex;
@@ -279,6 +355,16 @@ h2{
     background-position: center;
 }
 
+hr.solid {
+    border-top: 3px solid $color1;
+}
+
+.contacto{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
 
 
 /* ESTILO TIENDA */

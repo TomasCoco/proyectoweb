@@ -4,6 +4,61 @@
   padding: 0px;
 }
 
+/* Paleta de colores */
+/* extend */
+.btn_mendoza, .btn_cordoba, .btn_bariloche {
+  width: 100px;
+  text-align: center;
+  padding: 5px 0;
+  margin: 2px auto;
+  border-radius: 2px;
+  color: #FFFFFF;
+  margin-left: 550px;
+  margin-right: 550px;
+}
+
+.btn_bariloche {
+  background-color: #108EFF;
+}
+
+.btn_cordoba {
+  background-color: #FF8516;
+}
+
+.btn_mendoza {
+  background-color: #29a33d;
+}
+
+/* mixins */
+.vermas {
+  margin-bottom: 40px;
+}
+
+.ver_mas {
+  width: 200px;
+  height: 40px;
+  background-color: crimson;
+  border-radius: 5%;
+  text-align: center;
+  margin-left: 500px;
+  margin-right: 500px;
+}
+
+.ver_mas2 {
+  width: 200px;
+  height: 40px;
+  background-color: crimson;
+  border-radius: 5%;
+  text-align: center;
+  margin-left: 500px;
+  margin-right: 500px;
+}
+
+/* map */
+p {
+  font-weight: 400;
+}
+
 .container {
   display: flex;
   flex-direction: column;
@@ -263,6 +318,17 @@ h2 {
   background-image: url("https://www.comparaonline.com.ar/blog-statics/ar/uploads/2018/10/Rutas-argentinas-velocidad-maxima-y-requisitos-para-circular.jpg");
   background-size: cover;
   background-position: center;
+}
+
+hr.solid {
+  border-top: 3px solid crimson;
+}
+
+.contacto {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 /* ESTILO TIENDA */
